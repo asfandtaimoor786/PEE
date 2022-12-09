@@ -34,18 +34,24 @@ $weight-400: 400;
 $weight-500: 500;
 $weight-600: 600;
 $weight-700: 700;
+
+// MARGIN AUTO
 .m-auto {
   margin: auto;
 }
+// DISPLAY FLEX
 .d-flex {
   display: flex;
 }
+// TEXT ALIGN CENTER
 .text-center {
   text-align: center;
 }
+// TEXT ALIGN START
 .text-start {
   text-align: start;
 }
+// BACKGROUND COLOR
 .bg {
   &-black {
     background-color: $black;
@@ -53,7 +59,27 @@ $weight-700: 700;
   &-white {
     background-color: $white;
   }
+  &-gray {
+    &-light {
+      background-color: $gray-light;
+    }
+  }
 }
+// TEXT FONT COLOR
+.text {
+  &-black {
+    color: $black;
+  }
+  &-white {
+    color: $white;
+  }
+  &-gray {
+    &-dark {
+      color: $gray-dark;
+    }
+  }
+}
+// MARGIN BOTTOM
 .mb {
   &-1 {
     margin-bottom: $spacing-01;
@@ -76,7 +102,29 @@ $weight-700: 700;
   &-7 {
     margin-bottom: $spacing-07;
   }
+  &-8 {
+    margin-bottom: $spacing-08;
+  }
+  &-9 {
+    margin-bottom: $spacing-09;
+  }
+  &-10 {
+    margin-bottom: $spacing-10;
+  }
+  &-11 {
+    margin-bottom: $spacing-11;
+  }
+  &-12 {
+    margin-bottom: $spacing-12;
+  }
+  &-13 {
+    margin-bottom: $spacing-13;
+  }
+  &-14 {
+    margin-bottom: $spacing-14;
+  }
 }
+// PADDING
 .p {
   &-1 {
     padding: $spacing-02;
@@ -85,6 +133,7 @@ $weight-700: 700;
     padding: $spacing-03;
   }
 }
+// PADDING TOP
 .pt {
   &-1 {
     padding-top: $spacing-01;
@@ -110,7 +159,26 @@ $weight-700: 700;
   &-8 {
     padding-top: $spacing-08;
   }
+  &-9 {
+    padding-top: $spacing-09;
+  }
+  &-10 {
+    padding-top: $spacing-10;
+  }
+  &-11 {
+    padding-top: $spacing-11;
+  }
+  &-12 {
+    padding-top: $spacing-12;
+  }
+  &-13 {
+    padding-top: $spacing-13;
+  }
+  &-14 {
+    padding-top: $spacing-14;
+  }
 }
+// PADDING BOTTOM
 .pb {
   &-1 {
     padding-bottom: $spacing-01;
@@ -136,7 +204,26 @@ $weight-700: 700;
   &-8 {
     padding-bottom: $spacing-08;
   }
+  &-9 {
+    padding-bottom: $spacing-09;
+  }
+  &-10 {
+    padding-bottom: $spacing-10;
+  }
+  &-11 {
+    padding-bottom: $spacing-11;
+  }
+  &-12 {
+    padding-bottom: $spacing-12;
+  }
+  &-13 {
+    padding-bottom: $spacing-13;
+  }
+  &-14 {
+    padding-bottom: $spacing-14;
+  }
 }
+// DESCRIPTION SETYLE
 .desc {
   &-1 {
     font-size: 14px;
@@ -148,19 +235,40 @@ $weight-700: 700;
     line-height: 11px;
   }
 }
+// HEADING STYLE
 .heading {
+  &-1 {
+    font-size: 150px;
+    font-weight: bold;
+    font-family: $font-arial;
+  }
+  &-2 {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: $font-arial;
+  }
+  &-5 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: $font-arial;
+  }
   &-6 {
     font-size: 18px;
     font-weight: bold;
     font-family: $font-arial;
   }
 }
+// ALL LOGO WIDTH SIZE SET
 %logo {
   width: 100%;
   height: 100%;
   margin: 0 auto;
 }
 .logo {
+  &-xl {
+    @extend %logo;
+    max-width: 651px;
+  }
   &-lg {
     @extend %logo;
     max-width: 533px;
@@ -174,11 +282,26 @@ $weight-700: 700;
     @extend %logo;
   }
 }
+// WIDTH SET
 .w {
   &-100 {
     width: 100%;
   }
   &-50 {
     width: 100%;
+  }
+}
+// BORDER ADD
+.border {
+  border: 6px solid $black;
+}
+.fs {
+  &-normal {
+    font-weight: normal;
+  }
+}
+.ls {
+  &-1 {
+    letter-spacing: 2px;
   }
 }

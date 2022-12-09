@@ -21,7 +21,6 @@ img {
 .summary {
   &-logo {
     width: 60%;
-    border: 6px solid black;
   }
   &-svg {
     width: 100%;
@@ -30,7 +29,6 @@ img {
   }
   &-content {
     width: 40%;
-    border: 6px solid black;
     &-description {
       padding-inline: 30px;
       padding-block: 10px;

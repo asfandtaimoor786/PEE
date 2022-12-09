@@ -24,6 +24,22 @@
   background-color: #ffffff;
 }
 
+.bg-gray-light {
+  background-color: #d1d3d4;
+}
+
+.text-black {
+  color: #000000;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.text-gray-dark {
+  color: #58595b;
+}
+
 .mb-1 {
   margin-bottom: 0.25rem;
 }
@@ -50,6 +66,34 @@
 
 .mb-7 {
   margin-bottom: 2rem;
+}
+
+.mb-8 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-9 {
+  margin-bottom: 3rem;
+}
+
+.mb-10 {
+  margin-bottom: 3.375rem;
+}
+
+.mb-11 {
+  margin-bottom: 4rem;
+}
+
+.mb-12 {
+  margin-bottom: 4.5rem;
+}
+
+.mb-13 {
+  margin-bottom: 5rem;
+}
+
+.mb-14 {
+  margin-bottom: 6rem;
 }
 
 .p-1 {
@@ -92,6 +136,30 @@
   padding-top: 2.5rem;
 }
 
+.pt-9 {
+  padding-top: 3rem;
+}
+
+.pt-10 {
+  padding-top: 3.375rem;
+}
+
+.pt-11 {
+  padding-top: 4rem;
+}
+
+.pt-12 {
+  padding-top: 4.5rem;
+}
+
+.pt-13 {
+  padding-top: 5rem;
+}
+
+.pt-14 {
+  padding-top: 6rem;
+}
+
 .pb-1 {
   padding-bottom: 0.25rem;
 }
@@ -124,6 +192,30 @@
   padding-bottom: 2.5rem;
 }
 
+.pb-9 {
+  padding-bottom: 3rem;
+}
+
+.pb-10 {
+  padding-bottom: 3.375rem;
+}
+
+.pb-11 {
+  padding-bottom: 4rem;
+}
+
+.pb-12 {
+  padding-bottom: 4.5rem;
+}
+
+.pb-13 {
+  padding-bottom: 5rem;
+}
+
+.pb-14 {
+  padding-bottom: 6rem;
+}
+
 .desc-1 {
   font-size: 14px;
   font-family: arial, sans-serif;
@@ -135,16 +227,38 @@
   line-height: 11px;
 }
 
+.heading-1 {
+  font-size: 150px;
+  font-weight: bold;
+  font-family: arial, sans-serif;
+}
+
+.heading-2 {
+  font-size: 28px;
+  font-weight: bold;
+  font-family: arial, sans-serif;
+}
+
+.heading-5 {
+  font-size: 30px;
+  font-weight: bold;
+  font-family: arial, sans-serif;
+}
+
 .heading-6 {
   font-size: 18px;
   font-weight: bold;
   font-family: arial, sans-serif;
 }
 
-.logo-lg, .logo-md, .logo-sm {
+.logo-xl, .logo-lg, .logo-md, .logo-sm {
   width: 100%;
   height: 100%;
   margin: 0 auto;
+}
+
+.logo-xl {
+  max-width: 651px;
 }
 
 .logo-lg {
@@ -165,6 +279,18 @@
 
 .w-50 {
   width: 100%;
+}
+
+.border {
+  border: 6px solid #000000;
+}
+
+.fs-normal {
+  font-weight: normal;
+}
+
+.ls-1 {
+  letter-spacing: 2px;
 }
 
 * {
@@ -191,7 +317,6 @@ img {
 
 .summary-logo {
   width: 60%;
-  border: 6px solid black;
 }
 
 .summary-svg {
@@ -202,7 +327,6 @@ img {
 
 .summary-content {
   width: 40%;
-  border: 6px solid black;
 }
 
 .summary-content-description {
