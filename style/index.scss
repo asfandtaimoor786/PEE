@@ -8,7 +8,6 @@ img {
   width: 100%;
 }
 .wrapper {
-  border: 6px solid $black;
   max-width: 1080px;
 }
 .section {
@@ -18,45 +17,307 @@ img {
     color: $white;
   }
 }
-.summary {
-  &-logo {
-    width: 60%;
-  }
-  &-svg {
-    width: 100%;
-    height: 100%;
-    max-width: 500px;
-  }
-  &-content {
-    width: 40%;
-    &-description {
-      padding-inline: 30px;
-      padding-block: 10px;
-    }
-  }
-}
-.bg {
-  &-black-logo {
-    color: $white;
-  }
-  &-white-logo,
-  &-black-logo {
-    width: 50%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-.tagline {
-  color: $white;
-}
-.tagline,
-.logomark {
-  width: 50%;
-  display: flex;
+.f-column {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+// MARGIN AUTO
+.m-auto {
+  margin: auto;
+}
+// DISPLAY FLEX
+.d-flex {
+  display: flex;
+}
+// TEXT ALIGN CENTER
+.text-center {
+  text-align: center;
+}
+// TEXT ALIGN START
+.text-start {
+  text-align: start;
+}
+// BACKGROUND COLOR
+.bg {
+  &-black {
+    background-color: $black;
+  }
+  &-white {
+    background-color: $white;
+  }
+  &-gray {
+    &-light {
+      background-color: $gray-light;
+    }
+  }
+}
+// TEXT FONT COLOR
+.text {
+  &-black {
+    color: $black;
+  }
+  &-white {
+    color: $white;
+  }
+  &-gray {
+    &-dark {
+      color: $gray-dark;
+    }
+  }
+}
+// MARGIN BOTTOM
+.mb {
+  &-1 {
+    margin-bottom: $spacing-01;
+  }
+  &-2 {
+    margin-bottom: $spacing-02;
+  }
+  &-3 {
+    margin-bottom: $spacing-03;
+  }
+  &-4 {
+    margin-bottom: $spacing-04;
+  }
+  &-5 {
+    margin-bottom: $spacing-05;
+  }
+  &-6 {
+    margin-bottom: $spacing-06;
+  }
+  &-7 {
+    margin-bottom: $spacing-07;
+  }
+  &-8 {
+    margin-bottom: $spacing-08;
+  }
+  &-9 {
+    margin-bottom: $spacing-09;
+  }
+  &-10 {
+    margin-bottom: $spacing-10;
+  }
+  &-11 {
+    margin-bottom: $spacing-11;
+  }
+  &-12 {
+    margin-bottom: $spacing-12;
+  }
+  &-13 {
+    margin-bottom: $spacing-13;
+  }
+  &-14 {
+    margin-bottom: $spacing-14;
+  }
+}
+// PADDING BLOCK
+.ps {
+  &-1 {
+    margin-left: $spacing-06;
+  }
+  &-2 {
+    margin-left: $spacing-07;
+  }
+  &-3 {
+    margin-left: $spacing-08;
+  }
+}
+.pe {
+  &-1 {
+    margin-right: $spacing-06;
+  }
+  &-2 {
+    margin-right: $spacing-07;
+  }
+  &-3 {
+    margin-right: $spacing-08;
+  }
+}
+// PADDING
+.p {
+  &-1 {
+    padding: $spacing-02;
+  }
+  &-2 {
+    padding: $spacing-03;
+  }
+}
+// PADDING TOP
+.pt {
+  &-1 {
+    padding-top: $spacing-01;
+  }
+  &-2 {
+    padding-top: $spacing-02;
+  }
+  &-3 {
+    padding-top: $spacing-03;
+  }
+  &-4 {
+    padding-top: $spacing-04;
+  }
+  &-5 {
+    padding-top: $spacing-05;
+  }
+  &-6 {
+    padding-top: $spacing-06;
+  }
+  &-7 {
+    padding-top: $spacing-07;
+  }
+  &-8 {
+    padding-top: $spacing-08;
+  }
+  &-9 {
+    padding-top: $spacing-09;
+  }
+  &-10 {
+    padding-top: $spacing-10;
+  }
+  &-11 {
+    padding-top: $spacing-11;
+  }
+  &-12 {
+    padding-top: $spacing-12;
+  }
+  &-13 {
+    padding-top: $spacing-13;
+  }
+  &-14 {
+    padding-top: $spacing-14;
+  }
+}
+// PADDING BOTTOM
+.pb {
+  &-1 {
+    padding-bottom: $spacing-01;
+  }
+  &-2 {
+    padding-bottom: $spacing-02;
+  }
+  &-3 {
+    padding-bottom: $spacing-03;
+  }
+  &-4 {
+    padding-bottom: $spacing-04;
+  }
+  &-5 {
+    padding-bottom: $spacing-05;
+  }
+  &-6 {
+    padding-bottom: $spacing-06;
+  }
+  &-7 {
+    padding-bottom: $spacing-07;
+  }
+  &-8 {
+    padding-bottom: $spacing-08;
+  }
+  &-9 {
+    padding-bottom: $spacing-09;
+  }
+  &-10 {
+    padding-bottom: $spacing-10;
+  }
+  &-11 {
+    padding-bottom: $spacing-11;
+  }
+  &-12 {
+    padding-bottom: $spacing-12;
+  }
+  &-13 {
+    padding-bottom: $spacing-13;
+  }
+  &-14 {
+    padding-bottom: $spacing-14;
+  }
+}
+// DESCRIPTION SETYLE
+.desc {
+  &-1 {
+    font-size: 14px;
+    font-family: $font-arial;
+  }
+  &-2 {
+    font-size: 12px;
+    font-family: $font-arial;
+    line-height: 11px;
+  }
+}
+// HEADING STYLE
+.heading {
+  &-1 {
+    font-size: 150px;
+    font-weight: bold;
+    font-family: $font-arial;
+  }
+  &-2 {
+    font-size: 28px;
+    font-weight: bold;
+    font-family: $font-arial;
+  }
+  &-5 {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: $font-arial;
+  }
+  &-6 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: $font-arial;
+  }
+}
+// ALL LOGO WIDTH SIZE SET
+%logo {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.logo {
+  &-xl {
+    @extend %logo;
+    max-width: 651px;
+  }
+  &-lg {
+    @extend %logo;
+    max-width: 533px;
+  }
+  &-md {
+    max-width: 257px;
+    @extend %logo;
+  }
+  &-sm {
+    max-width: 174px;
+    @extend %logo;
+  }
+}
+// WIDTH SET
+.w {
+  &-100 {
+    width: 100%;
+  }
+  &-40 {
+    width: 40%;
+  }
+  &-50 {
+    width: 50%;
+  }
+  &-60 {
+    width: 60%;
+  }
+}
+// BORDER ADD
+.border {
+  border: 6px solid $black;
+}
+.fs {
+  &-normal {
+    font-weight: normal;
+  }
+}
+.ls {
+  &-1 {
+    letter-spacing: 2px;
+  }
 }
