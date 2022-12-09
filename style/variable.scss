@@ -8,6 +8,8 @@ $white-dark: #e6e7e8;
 $red: #ec2227;
 $dark: #231f20;
 
+// font-family
+$font-arial: arial, sans-serif;
 // spacing
 $spacing-01: 0.25rem; // 4px
 $spacing-02: 0.5rem; // 8px
@@ -32,3 +34,151 @@ $weight-400: 400;
 $weight-500: 500;
 $weight-600: 600;
 $weight-700: 700;
+.m-auto {
+  margin: auto;
+}
+.d-flex {
+  display: flex;
+}
+.text-center {
+  text-align: center;
+}
+.text-start {
+  text-align: start;
+}
+.bg {
+  &-black {
+    background-color: $black;
+  }
+  &-white {
+    background-color: $white;
+  }
+}
+.mb {
+  &-1 {
+    margin-bottom: $spacing-01;
+  }
+  &-2 {
+    margin-bottom: $spacing-02;
+  }
+  &-3 {
+    margin-bottom: $spacing-03;
+  }
+  &-4 {
+    margin-bottom: $spacing-04;
+  }
+  &-5 {
+    margin-bottom: $spacing-05;
+  }
+  &-6 {
+    margin-bottom: $spacing-06;
+  }
+  &-7 {
+    margin-bottom: $spacing-07;
+  }
+}
+.p {
+  &-1 {
+    padding: $spacing-02;
+  }
+  &-2 {
+    padding: $spacing-03;
+  }
+}
+.pt {
+  &-1 {
+    padding-top: $spacing-01;
+  }
+  &-2 {
+    padding-top: $spacing-02;
+  }
+  &-3 {
+    padding-top: $spacing-03;
+  }
+  &-4 {
+    padding-top: $spacing-04;
+  }
+  &-5 {
+    padding-top: $spacing-05;
+  }
+  &-6 {
+    padding-top: $spacing-06;
+  }
+  &-7 {
+    padding-top: $spacing-07;
+  }
+  &-8 {
+    padding-top: $spacing-08;
+  }
+}
+.pb {
+  &-1 {
+    padding-bottom: $spacing-01;
+  }
+  &-2 {
+    padding-bottom: $spacing-02;
+  }
+  &-3 {
+    padding-bottom: $spacing-03;
+  }
+  &-4 {
+    padding-bottom: $spacing-04;
+  }
+  &-5 {
+    padding-bottom: $spacing-05;
+  }
+  &-6 {
+    padding-bottom: $spacing-06;
+  }
+  &-7 {
+    padding-bottom: $spacing-07;
+  }
+  &-8 {
+    padding-bottom: $spacing-08;
+  }
+}
+.desc {
+  &-1 {
+    font-size: 14px;
+    font-family: $font-arial;
+  }
+  &-2 {
+    font-size: 12px;
+    font-family: $font-arial;
+    line-height: 11px;
+  }
+}
+.heading {
+  &-6 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: $font-arial;
+  }
+}
+%logo {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.logo {
+  &-lg {
+    @extend %logo;
+    max-width: 533px;
+  }
+  &-md {
+    max-width: 257px;
+    @extend %logo;
+  }
+  &-sm {
+    max-width: 174px;
+    @extend %logo;
+  }
+}
+.w {
+  &-100 {
+    width: 100%;
+  }
+  &-50 {
+    width: 100%;
+  }
+}
