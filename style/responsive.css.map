@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACqCA;;+CAE+C",
+    "sources": [
+        "responsive.scss",
+        "variable.scss"
+    ],
+    "names": [],
+    "file": "responsive.css"
+}
