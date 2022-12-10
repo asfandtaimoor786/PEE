@@ -39,6 +39,16 @@ img {
     flex-direction: column;
   }
 }
+.gap-1 {
+  &-lg {
+    gap: 1rem;
+  }
+  @media #{$break-md-down} {
+    &-lg {
+      gap: 0rem;
+    }
+  }
+}
 
 // TEXT ALIGN CENTER
 .text-center {
@@ -375,11 +385,6 @@ img {
     letter-spacing: 2px;
   }
 }
-@media #{$break-md-down} {
-  .Typography {
-    text-align: center;
-  }
-}
 .color {
   display: grid;
   grid-template-columns: 50px repeat(5, 1fr);
@@ -427,6 +432,8 @@ img {
 @media (max-width: 767px) {
   .color {
     grid-template-columns: 50px repeat(2, 1fr);
+    padding-inline: 12px;
+    grid-gap: 0.75rem;
 
     &-value {
       &-3 {
@@ -445,7 +452,7 @@ img {
   .color {
     grid-template-columns: 50px repeat(1, 1fr);
     padding-inline: 10px;
-
+    grid-gap: 0.75rem;
     &-value {
       &-1 {
         display: block;

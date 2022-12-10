@@ -59,6 +59,16 @@ img {
   }
 }
 
+.gap-1-lg {
+  gap: 1rem;
+}
+
+@media (max-width: 767px) {
+  .gap-1-lg {
+    gap: 0rem;
+  }
+}
+
 .text-center {
   text-align: center;
 }
@@ -428,12 +438,6 @@ img {
   letter-spacing: 2px;
 }
 
-@media (max-width: 767px) {
-  .Typography {
-    text-align: center;
-  }
-}
-
 .color {
   display: -ms-grid;
   display: grid;
@@ -504,6 +508,8 @@ img {
   .color {
     -ms-grid-columns: 50px (1fr)[2];
         grid-template-columns: 50px repeat(2, 1fr);
+    padding-inline: 12px;
+    grid-gap: 0.75rem;
   }
   .color-value-3 {
     display: block;
@@ -521,6 +527,7 @@ img {
     -ms-grid-columns: 50px (1fr)[1];
         grid-template-columns: 50px repeat(1, 1fr);
     padding-inline: 10px;
+    grid-gap: 0.75rem;
   }
   .color-value-1 {
     display: block;
