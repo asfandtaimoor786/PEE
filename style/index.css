@@ -1,6 +1,6 @@
 font-face {
   src: url(/font--family/calibrib.ttf);
-  font-family: 'calibri-bold', sans-serif;
+  font-family: calibri;
 }
 
 * {
@@ -329,7 +329,7 @@ img {
 .heading-1 {
   font-size: 150px;
   font-weight: bold;
-  font-family: 'calibri-bold', sans-serif;
+  font-family: calibri;
 }
 
 .heading-2 {

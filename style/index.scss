@@ -1,6 +1,6 @@
 font-face {
   src: url(/font--family/calibrib.ttf);
-  font-family: 'calibri-bold', sans-serif;
+  font-family: calibri;
 }
 
 @import 'variable';
@@ -285,7 +285,7 @@ img {
   &-1 {
     font-size: 150px;
     font-weight: bold;
-    font-family: 'calibri-bold', sans-serif;
+    font-family: calibri;
   }
   &-2 {
     font-size: 28px;
