@@ -34,3 +34,19 @@ $weight-400: 400;
 $weight-500: 500;
 $weight-600: 600;
 $weight-700: 700;
+
+/*********************************************
+Break Points
+**********************************************/
+// Up
+$break-xxl-up: '(min-width : 1401px)';
+$break-xl-up: '(min-width : 1201px)';
+$break-lg-up: '(min-width : 992px)';
+$break-md-up: '(min-width : 768px)';
+$break-sm-up: '(min-width : 576px)';
+// Down
+$break-xxl-down: '(max-width : 1400px)';
+$break-xl-down: '(max-width : 1200px)';
+$break-lg-down: '(max-width : 991px)';
+$break-md-down: '(max-width : 767px)';
+$break-sm-down: '(max-width : 575px)';
