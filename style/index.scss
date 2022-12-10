@@ -1,5 +1,9 @@
-@import 'variable';
+font-face {
+  src: url(/font--family/calibrib.ttf);
+  font-family: 'calibri-bold', sans-serif;
+}
 
+@import 'variable';
 * {
   margin: 0px;
   padding: 0px;
@@ -276,11 +280,12 @@ img {
   }
 }
 // HEADING STYLE
+
 .heading {
   &-1 {
     font-size: 150px;
     font-weight: bold;
-    font-family: $font-arial;
+    font-family: 'calibri-bold', sans-serif;
   }
   &-2 {
     font-size: 28px;
@@ -305,13 +310,17 @@ img {
   margin: 0 auto;
 }
 .logo {
-  &-xl {
+  &-xxl {
     @extend %logo;
     max-width: 651px;
   }
-  &-lg {
+  &-xl {
     @extend %logo;
     max-width: 533px;
+  }
+  &-lg {
+    @extend %logo;
+    max-width: 393px;
   }
   &-md {
     max-width: 257px;

@@ -1,3 +1,8 @@
+font-face {
+  src: url(/font--family/calibrib.ttf);
+  font-family: 'calibri-bold', sans-serif;
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -324,7 +329,7 @@ img {
 .heading-1 {
   font-size: 150px;
   font-weight: bold;
-  font-family: arial, sans-serif;
+  font-family: 'calibri-bold', sans-serif;
 }
 
 .heading-2 {
@@ -345,18 +350,22 @@ img {
   font-family: arial, sans-serif;
 }
 
-.logo-xl, .logo-lg, .logo-md, .logo-sm {
+.logo-xxl, .logo-xl, .logo-lg, .logo-md, .logo-sm {
   width: 100%;
   height: 100%;
   margin: 0 auto;
 }
 
-.logo-xl {
+.logo-xxl {
   max-width: 651px;
 }
 
-.logo-lg {
+.logo-xl {
   max-width: 533px;
+}
+
+.logo-lg {
+  max-width: 393px;
 }
 
 .logo-md {
