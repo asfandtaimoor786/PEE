@@ -40,4 +40,40 @@ Break Points
     width: 100%;
   }
 }
+
+@media (max-width: 767px) {
+  .color {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (20%)[5];
+        grid-template-columns: repeat(5, 20%);
+    place-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .color-card:nth-last-child() .d-none {
+    display: block;
+  }
+  .color-type {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: end;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+    padding-right: 8px;
+  }
+}
+
+.d-none {
+  display: none;
+}
 /*# sourceMappingURL=responsive.css.map */

@@ -278,7 +278,7 @@ img {
     @extend %desc;
     font-size: 16px;
     line-height: 22px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
   }
 }
 // HEADING STYLE
@@ -367,6 +367,7 @@ img {
   grid-template-columns: repeat(5, 20%);
   place-items: center;
   justify-content: center;
+  padding-inline: 15px;
   li {
     list-style: none;
   }
