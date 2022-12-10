@@ -1,6 +1,49 @@
 /*********************************************
 Break Points
 **********************************************/
+/*********************************************
+Break Points
+**********************************************/
+@media (max-width: 767px) {
+  .Typography {
+    text-align: center;
+  }
+}
+
+.f-column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (max-width: 767px) {
+  .d-flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 767px) {
+  .w-40 {
+    width: 100%;
+  }
+  .w-50 {
+    width: 100%;
+  }
+  .w-60 {
+    width: 100%;
+  }
+}
+
 font-face {
   src: url(/font--family/calibrib.ttf);
   font-family: calibri;
@@ -420,6 +463,12 @@ img {
 
 .color li {
   list-style: none;
+}
+
+.color-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .color-box {

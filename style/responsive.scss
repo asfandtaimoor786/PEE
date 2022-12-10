@@ -1,1 +1,63 @@
 @import 'variable';
+// @media #{$break-md-down} {
+//             &__title {
+//               text-transform: uppercase;
+//             }}
+
+@media #{$break-md-down} {
+  .Typography {
+    text-align: center;
+  }
+}
+.f-column {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+// DISPLAY FLEX
+.d {
+  @media #{$break-md-down} {
+    &-flex {
+      flex-direction: column;
+    }
+  }
+}
+
+// WIDTH SET
+.w {
+  @media #{$break-md-down} {
+    &-40 {
+      width: 100%;
+    }
+    &-50 {
+      width: 100%;
+    }
+    &-60 {
+      width: 100%;
+    }
+  }
+}
+
+// .color {
+//   display: grid;
+//   grid-template-columns: repeat(5, 20%);
+//   place-items: center;
+//   justify-content: center;
+//   li {
+//     list-style: none;
+//   }
+//   &-box {
+//     height: 2.6206rem;
+//   }
+//   &-type {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: end;
+//     align-items: end;
+//     padding-right: 8px;
+//   }
+// }
+// DISPLAY NONE
+// .d-none {
+//   display: none;
+// }

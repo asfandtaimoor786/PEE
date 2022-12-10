@@ -1,4 +1,6 @@
 @import 'variable';
+@import 'responsive';
+
 font-face {
   src: url(/font--family/calibrib.ttf);
   font-family: calibri;
@@ -367,6 +369,9 @@ img {
   justify-content: center;
   li {
     list-style: none;
+  }
+  &-card {
+    display: flex;
   }
   &-box {
     height: 2.6206rem;
