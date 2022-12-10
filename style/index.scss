@@ -1,4 +1,4 @@
-@import "variable";
+@import 'variable';
 * {
   margin: 0px;
   padding: 0px;
@@ -30,6 +30,10 @@ img {
 .d-flex {
   display: flex;
 }
+// DISPLAY NONE
+.d-none {
+  display: none;
+}
 // TEXT ALIGN CENTER
 .text-center {
   text-align: center;
@@ -43,13 +47,27 @@ img {
   &-black {
     background-color: $black;
   }
-  &-white {
-    background-color: $white;
-  }
   &-gray {
+    background-color: $gray;
+    &-dark {
+      background-color: $gray-dark;
+    }
     &-light {
       background-color: $gray-light;
     }
+  }
+
+  &-white {
+    background-color: $white;
+    &-dark {
+      background-color: $white-dark;
+    }
+  }
+  &-red {
+    background-color: $red;
+  }
+  &-dark {
+    background-color: $dark;
   }
 }
 // TEXT FONT COLOR
@@ -61,12 +79,17 @@ img {
     color: $white;
   }
   &-gray {
+    color: $gray;
     &-dark {
       color: $gray-dark;
+    }
+    &-light {
+      color: $gray-light;
     }
   }
 }
 // MARGIN BOTTOM
+
 .mb {
   &-1 {
     margin-bottom: $spacing-01;
@@ -234,38 +257,47 @@ img {
   }
 }
 // DESCRIPTION SETYLE
+%desc {
+  font-family: $font-arial;
+}
 .desc {
   &-1 {
+    @extend %desc;
     font-size: 14px;
-    font-family: $font-arial;
   }
   &-2 {
+    @extend %desc;
     font-size: 12px;
-    font-family: $font-arial;
     line-height: 11px;
+  }
+  &-3 {
+    @extend %desc;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 2px;
   }
 }
 // HEADING STYLE
-%heading {
-  font-weight: bold;
-  font-family: $font-arial;
-}
 .heading {
   &-1 {
-    @extend %heading;
-    font-size:clamp(6.25rem, 8vw, 9.375rem);
+    font-size: 150px;
+    font-weight: bold;
+    font-family: $font-arial;
   }
   &-2 {
-    @extend %heading;
-    font-size:clamp(1.375rem, 4vw, 1.75rem);
+    font-size: 28px;
+    font-weight: bold;
+    font-family: $font-arial;
   }
   &-5 {
-    @extend %heading;
-    font-size:clamp(1.475rem, 3vw, 1.875rem);
+    font-size: 30px;
+    font-weight: bold;
+    font-family: $font-arial;
   }
   &-6 {
-    @extend %heading;
-    font-size:clamp(.9375rem, 2vw, 1.125rem);
+    font-size: 18px;
+    font-weight: bold;
+    font-family: $font-arial;
   }
 }
 // ALL LOGO WIDTH SIZE SET
@@ -319,5 +351,17 @@ img {
 .ls {
   &-1 {
     letter-spacing: 2px;
+  }
+}
+.color {
+  display: grid;
+  grid-template-columns: repeat(5, 20%);
+  place-items: center;
+  justify-content: center;
+  li {
+    list-style: none;
+  }
+  &-box {
+    height: 2.6206rem;
   }
 }
