@@ -41,7 +41,7 @@
 .color {
   @media #{$break-md-down} {
     display: grid;
-    grid-template-columns: repeat(5, 20%);
+    grid-template-columns: repeat(3, 20%);
     place-items: center;
     justify-content: center;
     &-card:nth-last-child() {

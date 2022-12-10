@@ -45,8 +45,8 @@ Break Points
   .color {
     display: -ms-grid;
     display: grid;
-    -ms-grid-columns: (20%)[5];
-        grid-template-columns: repeat(5, 20%);
+    -ms-grid-columns: (20%)[3];
+        grid-template-columns: repeat(3, 20%);
     place-items: center;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
