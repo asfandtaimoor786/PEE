@@ -437,13 +437,14 @@ img {
 .color {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (20%)[5];
-      grid-template-columns: repeat(5, 20%);
+  -ms-grid-columns: 50px (1fr)[5];
+      grid-template-columns: 50px repeat(5, 1fr);
   place-items: center;
+  grid-gap: 20px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-inline: 15px;
+  padding-inline: 30px;
 }
 
 .color li {
@@ -454,6 +455,19 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.color-value {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-self: flex-end;
+  -ms-flex-item-align: end;
+      align-self: end;
+}
+
+.color-value-2, .color-value-3, .color-value-4, .color-value-5 {
+  display: none;
 }
 
 .color-box {
@@ -474,7 +488,55 @@ img {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: end;
-  padding-right: 8px;
+}
+
+@media (max-width: 1030px) {
+  .color {
+    -ms-grid-columns: 50px (1fr)[3];
+        grid-template-columns: 50px repeat(3, 1fr);
+  }
+  .color-value-4 {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .color {
+    -ms-grid-columns: 50px (1fr)[2];
+        grid-template-columns: 50px repeat(2, 1fr);
+  }
+  .color-value-3 {
+    display: block;
+  }
+  .color-value-4 {
+    display: none;
+  }
+  .color-value-5 {
+    display: block;
+  }
+}
+
+@media (max-width: 455px) {
+  .color {
+    -ms-grid-columns: 50px (1fr)[1];
+        grid-template-columns: 50px repeat(1, 1fr);
+    padding-inline: 10px;
+  }
+  .color-value-1 {
+    display: block;
+  }
+  .color-value-2 {
+    display: block;
+  }
+  .color-value-3 {
+    display: block;
+  }
+  .color-value-4 {
+    display: block;
+  }
+  .color-value-5 {
+    display: block;
+  }
 }
 
 .d-none {

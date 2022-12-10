@@ -382,15 +382,27 @@ img {
 }
 .color {
   display: grid;
-  grid-template-columns: repeat(5, 20%);
+  grid-template-columns: 50px repeat(5, 1fr);
   place-items: center;
+  grid-gap: 20px;
   justify-content: center;
-  padding-inline: 15px;
+  padding-inline: 30px;
   li {
     list-style: none;
   }
   &-card {
     display: flex;
+  }
+  &-value {
+    display: flex;
+    justify-self: flex-end;
+    align-self: end;
+    &-2,
+    &-3,
+    &-4,
+    &-5 {
+      display: none;
+    }
   }
   &-box {
     height: 2.6206rem;
@@ -400,9 +412,57 @@ img {
     flex-direction: column;
     justify-content: end;
     align-items: end;
-    padding-right: 8px;
   }
-  @media #{$break-md-down} {
+}
+@media (max-width: 1030px) {
+  .color {
+    grid-template-columns: 50px repeat(3, 1fr);
+    &-value {
+      &-4 {
+        display: block;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .color {
+    grid-template-columns: 50px repeat(2, 1fr);
+
+    &-value {
+      &-3 {
+        display: block;
+      }
+      &-4 {
+        display: none;
+      }
+      &-5 {
+        display: block;
+      }
+    }
+  }
+}
+@media (max-width: 455px) {
+  .color {
+    grid-template-columns: 50px repeat(1, 1fr);
+    padding-inline: 10px;
+
+    &-value {
+      &-1 {
+        display: block;
+      }
+      &-2 {
+        display: block;
+      }
+      &-3 {
+        display: block;
+      }
+      &-4 {
+        display: block;
+      }
+      &-5 {
+        display: block;
+      }
+    }
   }
 }
 // DISPLAY NONE
