@@ -1,9 +1,10 @@
+@import 'variable';
+
 font-face {
-  src: url(/font--family/calibrib.ttf);
+  src: url('../font--family/calibrib.ttf');
   font-family: calibri;
 }
 
-@import 'variable';
 * {
   margin: 0px;
   padding: 0px;
@@ -34,6 +35,19 @@ img {
 // DISPLAY FLEX
 .d-flex {
   display: flex;
+  @media #{$break-md-down} {
+    flex-direction: column;
+  }
+}
+.gap-1 {
+  &-lg {
+    gap: 1rem;
+  }
+  @media #{$break-md-down} {
+    &-lg {
+      gap: 0rem;
+    }
+  }
 }
 
 // TEXT ALIGN CENTER
@@ -276,14 +290,14 @@ img {
     @extend %desc;
     font-size: 16px;
     line-height: 22px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
   }
 }
 // HEADING STYLE
 
 .heading {
   &-1 {
-    font-size: 150px;
+    font-size: clamp(6rem, 13vw, 9.375rem);
     font-weight: bold;
     font-family: calibri;
   }
@@ -336,14 +350,25 @@ img {
   &-100 {
     width: 100%;
   }
-  &-40 {
-    width: 40%;
+  &-60 {
+    width: 60%;
   }
   &-50 {
     width: 50%;
   }
-  &-60 {
-    width: 60%;
+  &-40 {
+    width: 40%;
+  }
+  @media #{$break-md-down} {
+    &-60 {
+      width: 100%;
+    }
+    &-50 {
+      width: 100%;
+    }
+    &-40 {
+      width: 100%;
+    }
   }
 }
 // BORDER ADD
@@ -362,11 +387,27 @@ img {
 }
 .color {
   display: grid;
-  grid-template-columns: repeat(5, 20%);
+  grid-template-columns: 50px repeat(5, 1fr);
   place-items: center;
+  grid-gap: 20px;
   justify-content: center;
+  padding-inline: 30px;
   li {
     list-style: none;
+  }
+  &-card {
+    display: flex;
+  }
+  &-value {
+    display: flex;
+    justify-self: flex-end;
+    align-self: end;
+    &-2,
+    &-3,
+    &-4,
+    &-5 {
+      display: none;
+    }
   }
   &-box {
     height: 2.6206rem;
@@ -376,10 +417,67 @@ img {
     flex-direction: column;
     justify-content: end;
     align-items: end;
-    padding-right: 8px;
+  }
+}
+@media (max-width: 1030px) {
+  .color {
+    grid-template-columns: 50px repeat(3, 1fr);
+    &-value {
+      &-4 {
+        display: block;
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .color {
+    grid-template-columns: 50px repeat(2, 1fr);
+    padding-inline: 12px;
+    grid-gap: 0.75rem;
+
+    &-value {
+      &-3 {
+        display: block;
+      }
+      &-4 {
+        display: none;
+      }
+      &-5 {
+        display: block;
+      }
+    }
+  }
+}
+@media (max-width: 455px) {
+  .color {
+    grid-template-columns: 50px repeat(1, 1fr);
+    padding-inline: 10px;
+    grid-gap: 0.75rem;
+    &-value {
+      &-1 {
+        display: block;
+      }
+      &-2 {
+        display: block;
+      }
+      &-3 {
+        display: block;
+      }
+      &-4 {
+        display: block;
+      }
+      &-5 {
+        display: block;
+      }
+    }
   }
 }
 // DISPLAY NONE
 .d-none {
   display: none;
+  @media #{$break-md-down} {
+    &-flex {
+      flex-direction: column;
+    }
+  }
 }
