@@ -1,8 +1,8 @@
 @import 'variable';
 
-font-face {
-  src: url('../font--family/calibrib.ttf');
+@font-face {
   font-family: calibri;
+  src: url('/assets/font/calibrib.ttf');
 }
 
 * {
